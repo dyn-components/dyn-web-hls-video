@@ -1,0 +1,37 @@
+{
+  "name": "@web-components/hls-video",
+  "private": true,
+  "version": "0.0.0-alpha.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "preview": "vite preview",
+    "build:example": "tsc && vite build",
+    "build:lib": "tsc && vite build --config ./vite-lib.config.ts",
+    "build": "npm run build:lib && npm run build:example"
+  },
+  "devDependencies": {
+    "sass": "^1.77.8",
+    "typescript": "^5.2.2",
+    "vite": "^5.3.4",
+    "vite-plugin-dts": "3.7.3",
+    "vite-plugin-lib-inject-css": "^2.1.1"
+  },
+  "author": "wuyuedefeng",
+  "description": "",
+  "types": "./dist/hls-video.d.ts",
+  "main": "./dist/hls-video.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/hls-video.es.js",
+      "require": "./dist/hls-video.umd.js"
+    }
+  },
+  "files": [
+    "/dist"
+  ],
+  "dependencies": {
+    "dyn-components": "0.0.0-beta.1",
+    "hls.js": "^1.5.13"
+  }
+}

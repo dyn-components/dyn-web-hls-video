@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hls-video Web Component</title>
+    <script type="module" src="./main.ts"></script>
+  </head>
+  <style>
+    dyn-web-hls-video {
+      display: block;
+      margin: 0 auto;
+      width: 500px;
+    }
+  </style>
+  <body>
+    <div id="app"></div>
+    <dyn-web-hls-video src="https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8" autoplay muted controls></dyn-web-hls-video>
+  </body>
+</html>
